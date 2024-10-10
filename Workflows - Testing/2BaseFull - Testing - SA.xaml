@@ -1,0 +1,326 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_2BaseFull" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1180,16673.6" sap2010:WorkflowViewState.IdRef="_2BaseFull_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umam="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.MicrosoftOffice365.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Platform</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence - Start" sap:VirtualizedContainerService.HintSize="1023.2,4231.2" sap2010:WorkflowViewState.IdRef="Sequence_66">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="currentDateTimeNow" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence - Get Current Date and Time" sap:VirtualizedContainerService.HintSize="552,319.2" sap2010:WorkflowViewState.IdRef="Sequence_70">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[currentDateTimeNow]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("dd-MM-yyyy/hh:mm:ss")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_37" Text="[&quot;Execution Date &amp; Time: &quot;+currentDateTimeNow]" />
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="552,3888.8" sap2010:WorkflowViewState.IdRef="Sequence_96">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 2Base Technologies: Software Development Services In South Africa." sap:VirtualizedContainerService.HintSize="518.4,3805.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c3dcec3c-3457-4163-8694-0857955916c8" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,3565.6" sap2010:WorkflowViewState.IdRef="Sequence_79">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="errorMessage_SA" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lets Talk?'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3dcec3c-3457-4163-8694-0857955916c8" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.co.za/index" CVScreenId="5b7568c1-7c7c-4358-a743-9ab30e00183d" CvElementArea="1644, 163, 222, 58" CvTextArea="1727, 179, 111, 22" CvTextArgument="Lets Talk?" CvType="Button" DesignTimeRectangle="1647, 166, 217, 52" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='btn_dl' parentid='navigation' tag='A' type='' aaname='                                                                    Lets Talk?                             ' check:innerText='Lets Talk?' /&gt;" Guid="dc5d6737-cab3-42d7-abaa-14ea674330c4" InformativeScreenshot="6f6e79040f4dbb8d498993c83a2ff479.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,412" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,301.6" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="c3dcec3c-3457-4163-8694-0857955916c8" Text="Testing" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.co.za/contact" CVScreenId="7e17a97b-55c6-4007-9f95-05b9dc1249de" CvTextArea="191, 402, 114, 22" CvTextArgument="Your Name" CvType="Text" DesignTimeRectangle="133, 373, 455, 80" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='' placeholder='Your Name' aaname='' /&gt;" Guid="3154191f-0a04-4c44-8a51-a939f7d7d0d9" InformativeScreenshot="edbdb979938551ed780e05c5f2c22813.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="c3dcec3c-3457-4163-8694-0857955916c8" Text="8547152021" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.co.za/contact" CVScreenId="7e17a97b-55c6-4007-9f95-05b9dc1249de" CvTextArea="684, 402, 67, 21" CvTextArgument="Phone" CvType="Text" DesignTimeRectangle="626, 373, 454, 80" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='phone' tag='INPUT' type='text' class='' placeholder='Phone' aaname='' /&gt;" Guid="3d27e834-228c-4479-8eee-6192b9947728" InformativeScreenshot="bffa7c13c06cb159357ec1936aa8a5cb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT form_email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="c3dcec3c-3457-4163-8694-0857955916c8" Text="jithinkrishnan.rs@2basetechnologies.com" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.co.za/contact" CVScreenId="7e17a97b-55c6-4007-9f95-05b9dc1249de" CvTextArea="192, 519, 55, 21" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="133, 490, 455, 79" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='form_email' tag='INPUT' type='email' class='' placeholder='Email' aaname='' /&gt;" Guid="b0bbc0fe-b7e7-4e6d-aff6-07137c43bb73" InformativeScreenshot="8606eab80a79717aecde9dfe875d0725.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT company'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="c3dcec3c-3457-4163-8694-0857955916c8" Text="2Base Technologies" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.co.za/contact" CVScreenId="7e17a97b-55c6-4007-9f95-05b9dc1249de" CvTextArea="684, 520, 105, 25" CvTextArgument="Company" CvType="Text" DesignTimeRectangle="626, 490, 454, 79" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='company' tag='INPUT' type='text' class='' placeholder='Company' aaname='' /&gt;" Guid="73c5810f-12f0-4223-b306-e9963c900144" InformativeScreenshot="e1a5bae1aeebcef36d61869f0e0aabce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA form_message'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="c3dcec3c-3457-4163-8694-0857955916c8" Text="Testing" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.co.za/contact" CVScreenId="7e17a97b-55c6-4007-9f95-05b9dc1249de" CvElementArea="131, 603, 948, 190" CvType="InputBox" DesignTimeRectangle="133, 607, 947, 182" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='form_message' tag='TEXTAREA' type='' class='' aaname='' /&gt;" Guid="baf9a499-673e-4ee9-a85c-073d81bc962a" InformativeScreenshot="5e10ac944338dc7645680d8dd6c8c06e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3dcec3c-3457-4163-8694-0857955916c8" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.co.za/contact" CVScreenId="7e17a97b-55c6-4007-9f95-05b9dc1249de" CvElementArea="864, 833, 217, 87" CvTextArea="951, 862, 100, 26" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="867, 835, 213, 80" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='submit' tag='BUTTON' type='' class='submit' aaname='                                     submit                                 ' check:innerText='SUBMIT' /&gt;" Guid="a771618b-377b-470d-ae34-ab72e89fd464" InformativeScreenshot="b77a3e3faf228bc45e1848f12772d018.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_18" />
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'DIV'" sap:VirtualizedContainerService.HintSize="451.2,139.2" sap2010:WorkflowViewState.IdRef="GetValue_5">
+                <ui:GetValue.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="38317153-b212-4dcb-8bbe-315ad164c665" InformativeScreenshot="d404abe975aa79458f8abc8adfe61fec" Selector="&lt;webctrl tag='SPAN' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:GetValue.Target>
+                <ui:GetValue.Value>
+                  <OutArgument x:TypeArguments="x:String">[errorMessage_SA]</OutArgument>
+                </ui:GetValue.Value>
+              </ui:GetValue>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_44" Text="[errorMessage_SA]" />
+              <If Condition="[errorMessage_SA.ToLower.Equals(&quot;  thank you for contacting us.&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,1327.2" sap2010:WorkflowViewState.IdRef="If_11">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_39" Text="Pass" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,990.4" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="ui:Image" Name="screenshotImg" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_40" Text="Fail" />
+                    <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'DIV'" sap:VirtualizedContainerService.HintSize="382.4,139.2" sap2010:WorkflowViewState.IdRef="TakeScreenshot_9" Screenshot="[screenshotImg]">
+                      <ui:TakeScreenshot.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="88d11dbe-fc9a-4c75-8f06-e0d9c34c8531" InformativeScreenshot="3e46086f32375142801c493cb5f0e00d" Selector="&lt;webctrl tag='SECTION' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TakeScreenshot.Target>
+                    </ui:TakeScreenshot>
+                    <ui:SaveImage DisplayName="Save Image" FileName="C:\Users\Jithin Krishnan R S\OneDrive\Documents\OpenRPA Screenshot\2base_sa.jpg" sap:VirtualizedContainerService.HintSize="382.4,166.4" sap2010:WorkflowViewState.IdRef="SaveImage_9" Image="[screenshotImg]" />
+                    <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello,&#xA;&#xA;&#xA;This is an automated message to inform you that the contact form on the &lt;/SPAN&gt;&lt;SPAN&gt;Let&amp;#39;s Talk&lt;/SPAN&gt;&lt;SPAN&gt; Page of the &lt;/SPAN&gt;&lt;SPAN&gt;Australia &lt;/SPAN&gt;&lt;SPAN&gt;Website has encountered an error. Please find the attached screenshot detailing the issue.&#xA;&#xA;&#xA;Thank you for your attention.&#xA;&#xA;&#xA;Best regards,&#xA;&#xA;&#xA;RPA Bot&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,502.4" sap2010:WorkflowViewState.IdRef="SendMailConnections_11" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us Page at &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+                      <umam:SendMailConnections.AttachmentList>
+                        <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
+                          <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\2base_sa.jpg")]</InArgument>
+                        </scg:List>
+                      </umam:SendMailConnections.AttachmentList>
+                      <umam:SendMailConnections.AttachmentsBackup>
+                        <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Builder">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                              <x:Null />
+                            </scg:List>
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </umam:SendMailConnections.AttachmentsBackup>
+                      <umam:SendMailConnections.InputTypeBackup>
+                        <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="HTML">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:List x:TypeArguments="x:Object" x:Key="HTML" Capacity="1">
+                              <InArgument x:TypeArguments="x:String" xml:space="preserve">[string.Format("&lt;P&gt;&lt;SPAN&gt;Hello,
+
+This is an automated message to inform you that the contact form on the &lt;/SPAN&gt;&lt;SPAN&gt;Let&amp;#39;s Talk&lt;/SPAN&gt;&lt;SPAN&gt; Page of the &lt;/SPAN&gt;&lt;SPAN&gt;Australia &lt;/SPAN&gt;&lt;SPAN&gt;Website has encountered an error. Please find the attached screenshot detailing the issue.
+
+Thank you for your attention.
+
+Best regards,
+RPA Bot&lt;/SPAN&gt;&lt;/P&gt;")]</InArgument>
+                            </scg:List>
+                            <scg:List x:TypeArguments="x:Object" x:Key="TEXT" Capacity="1">
+                              <InArgument x:TypeArguments="x:String">[string.Format("Hello,{0}{1}This is an automated notification that the submission of the ""Contact Us"" form on the website Let's Talk Page has failed.{2}{3}A screenshot illustrating the issue is attached.{4}{5}Thanks &amp; Regards,", Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine, Environment.NewLine)]</InArgument>
+                            </scg:List>
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </umam:SendMailConnections.InputTypeBackup>
+                      <umam:SendMailConnections.MailboxBackup>
+                        <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" StoredValue="NoMailbox">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:Dictionary x:TypeArguments="umame:MailboxSelectionMode, scg:List(x:Object)" />
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </umam:SendMailConnections.MailboxBackup>
+                    </umam:SendMailConnections>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVASURBVFhHxVf/T1NXFK8J/8K+QQvSVxTUoWyBZIJfcNPFLXExZpuJYcwMs2GyZT8Qx9hYajQw6Ht83ZRRQEc2FjdFdIlBRFBBwoKwjck2QNgXZhULA7GlX+HsnNv3Hu+VFgou8SSfpL3vnvO5954v91xNaGIMizAUaCOi+TQtJ1Rq9aZOLWe6p+N4D4F++8aESppDc0lHVH4YMYaFR+Un6PT8cR1nuo1kbgQsApyDc1GHdJe9kCc40+NaPZ+PBq2IWQVBqCAdK9kgW6LZkGRFxMrCDbiDNlT2+hldMpgNtEU2ybaPIris0EUXbkLFfh0nLGfXQcBs9ZNt4vBRBRC2c0YeyMjCiDTwELO2BLa9eAKyPmiEvIKrcCjnImx5oRpWrhKkef3iScyXJw1lj9FRLWXnUTECrF5XCi+9Ugv5hdfgesdfcP++AzyeGZidnQWvdwasVjsU8G0Qs6YEddA2chCXSCuJMYyCJRSf007XJpTDvvTvoPxYJ3Td+AemppyMdGZmlsFfnE4P5JuusZMgDuJSZQdLNV+0ByQlRdot/V73TDlkZDbAkbwrkIe7Nh5pUeFo/hU42/ArTEw4RHqfjI/bYdO2Ksmm1ZeiTIxhlLM4qDp62ikd756937AjTEg6Jo9HGmSfBoQ+tgh2v1oHg0PjIj2Ay+WFtw+ek+aQK46zUwjnBJ1OL1iUBuiIc3IvwQ9dI+hTJ2RlNzJi5Rx/0AlxscWqsTcz6sHh8MgLyHinYe47chK3JsLAp+GAXOEoijs6/wa3e4YpTk46ICnlC1kxbn0Z7Hj5y3nYtedrONPQB8mpZnlu7NOl0PvLXWaH4mTr9mr5G8IdwQlvaKh+S4PrEz+Hnh8tGMFMh8nExDQcPtoKOZ9cYmhsGgSbzQU2uxp2u5sF4M2+Udj9Wh07MS6uGJqabzE77ZghlKaKBYCW4824AFOXNJD9cRNLHaXQYmhMAqXXQjI97WaBSIErLYD0KECV5ATixgXMRb9Qcl00M1+I2GKZgobzv0HNyW4w19wAc/UcTtT2gOXOFBz68CIjJnsGzP229j+ZG6kgSTwSkHtUgz/oSmUDfHG7SKcWIr/cMgSbn69iEU4Bx4DZIIFIKRakdCWkpFaBdcwOrVeH2WKkcQWcqgXsTfuW+ddfBgbHIHFjhaxI/o1eXST/D4S4+FI4fbaPFahcY3PAOQinygV6NFpS1sEqlyQUWKaidjkNybfpb9VD9kdNkJhcoUJSSgUkbzWz9GtpHWLkE3j8igKkAnOBMggJdFTkCil/3W4vHHzve/aNjjn38GVmlIKNfKsC3gMPHrhUG2hG1xnEmPCHFIRm/w9UUChqbZhaLlxA5rvn2Xjqjhr4vd+qStOFxIPRTwXN374EbOOqNFQM8M+8Vot8/H7WBRi9Z5NPgErw9p0noav7NvTevAun6/uYnwPhDKLuVC8koWv8bYvAQsSna57SfxrpX4olUEQfyDwH+9GnynHy985dtWyRi0GppwJyEnfQy0gCBZ+iofi/MHcZkYRHCQtexxKoBtBdEBu/MGgOzQ1kQwRex4J0HZOE1pDEP/sZq4RDw//C8B/B0d1jgY1b5i4lJQI2JCTUOlO7tFhLRn3BV3U/sTT0F6oZA7fG4PV9p+S6oYavJQvapofalFI92H+gHi40DsDIyCTr+37uvQPFWMSe21wZUEdE8KZUlCW15bQQ8veaDWWwCrsn5T2gBrO1eFsuyiN9mMjyKJ9mCnnYxyml2jIfp2oRn+dYtn3Pc973PDfQVW5y4f9R3xg+z3FO6M9zjeY/1Y9yX47F2EMAAAAASUVORK5CYII=" InformativeScreenshot="733b5a5ce7ae9345b98da44ca6278a18.jpg" Selector="&lt;html app='chrome.exe' title='2Base Technologies: Software Development Services In South Africa.' /&gt;" Title="2Base Technologies: Software Development Services In South Africa." Url="https://www.2basetechnologies.co.za/index" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

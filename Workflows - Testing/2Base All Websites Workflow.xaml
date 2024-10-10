@@ -1,0 +1,190 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_2Base_All_Websites_Workflow" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="_2Base_All_Websites_Workflow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_2Base_All_Websites_Workflow" sap:VirtualizedContainerService.HintSize="1232.8000000000002,2278.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence - Get Current Date and Time" sap:VirtualizedContainerService.HintSize="587.2,319.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="currentDateTimeNow" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[currentDateTimeNow]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("dd-MM-yyyy/hh:mm:ss")]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Execution Date &amp; Time: &quot;+currentDateTimeNow]" />
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="587.2,1936" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Sequence - Global" sap:VirtualizedContainerService.HintSize="553.6,1852.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 2Base Technologies | Leading Digital Solutions Company Empowering Global Busines" sap:VirtualizedContainerService.HintSize="520,1769.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="a15b80d9-3207-4b29-b313-15a289adcb55" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1529.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="a15b80d9-3207-4b29-b313-15a289adcb55" Text="Testing" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="6f94d6b1-4908-4cc8-85ca-713926328522" CvElementArea="1047, 555, 597, 54" CvType="InputBox" DesignTimeRectangle="1055, 622, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required' placeholder='Full Name *' aaname='' /&gt;" Guid="09d1cd07-8357-4eef-80ca-1ec4076df6b4" InformativeScreenshot="7c15bf851e7497418910ee6ee10c9977.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="a15b80d9-3207-4b29-b313-15a289adcb55" Text="jithinkrishnan.rs@2basetechnologies.com" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" DesignTimeRectangle="1055, 463, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email' placeholder='Email Address *' aaname='' /&gt;" Guid="eeb70619-1a65-4dcf-8c27-6646be4038c1" InformativeScreenshot="417f2354e08d4233ecfe567672eaa479.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="a15b80d9-3207-4b29-b313-15a289adcb55" Text="8547152021" Version="V4">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" DesignTimeRectangle="1055, 428, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='tel' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='tel' class='wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel' placeholder='Contact Number *' aaname='' /&gt;" Guid="a7fda836-0490-4067-ab08-7e7bae485e62" InformativeScreenshot="267b650fb2d47cba1fe91ca40a0603f2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,412" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,301.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="a15b80d9-3207-4b29-b313-15a289adcb55" Text="Testing" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="6f94d6b1-4908-4cc8-85ca-713926328522" CvElementArea="1047, 555, 597, 54" CvType="InputBox" DesignTimeRectangle="1055, 518, 584, 89" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required' placeholder='Project Description *' aaname='' /&gt;" Guid="627d6557-af15-483b-9b0c-dbf68751bdf8" InformativeScreenshot="a3d1574064733446188000b99706c2ba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Request Proposal'" sap:VirtualizedContainerService.HintSize="451.2,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a15b80d9-3207-4b29-b313-15a289adcb55" Version="V4">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="a1905d5a-5247-4a14-9a4f-a3b564b8720d" CvElementArea="1050, 724, 593, 94" CvTextArea="1245, 760, 202, 26" CvTextArgument="Request Proposal" CvType="Button" DesignTimeRectangle="1055, 729, 584, 85" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='wpcf7-form-control wpcf7-submit has-spinner req-proposal-btn btn-hover' aaname='Request Proposal' check:text='Request Proposal' /&gt;" Guid="bfd7b9b1-c025-4a3d-91ad-c49e19992baf" InformativeScreenshot="34b2050323ef1ff90fb4ca520357eaf0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="451.2,115.2" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJhSURBVDhPlZNLTxNRFMdngR/BL6BGN0VxgUESE2migYUPEhWNCJpGURdojCa40bDBBWCCOxemJu5cmPhA0YiiISjRIG2hD9ppKZUW2tr3PDrtzN97bqeFhrjwn/ySmXvPOffcc84VqgJAbGNYGU8ZIkM2oW9aoz2yMb2Y6MdkO2OYkWD8S7RHNmTL/TY7P2cYjHrpOrTYGrKfviD14iUUn99ga2TLg5BzA4OibjgbBkqJJLIfP2N1cAhLJ85goakFjl174TncjuzkFNmSTwMFoHvF6aTi71Vo63EeQFuNovBzDvmZ7yjM/kD2wyRCtutw7LAgeLEPuqwwQ1gpgJ1SjD4YQaCrB8pSgAcop9Mop9IoMVQxCEPToIbC8LR1IHCulwWg2sIulHM5MXzjDhw7LVhsPsRTjty9D19HJ7xHjnHcB62IP34CXVEgXrDxw0yJguxalN0tbXDu3sdxWZqxfO0mYqOPEHvIGB1DZOAe8t9moRcKCF66ivz0jOkPWdDW1mX/qfMsg0Y49zRxR0rXUFXeAZKhlWCUdaRfjSPYe4VdL8PXmWSqgUhF8h49zistOVzsziGE+29j5dYAP50I9fVjYX8rYiNjFdeKRF5E+pLm5hHsuQzF44X0ywH/yS74O88icLq7hthtgzTvJPOq7BttZCquRHjlSaVkErokwSgWK6hFal3tWky1Nm4ZJJqBzNv3SL+ZQGZ8AunX79gkTlVbR6obJKJulEt/UogODcPdaoWr8QDrfTsS9me8uKZN3ShvDkJR+WMiY8XjQ+7rNNTgcjX1rY+pKnPhP5+zIPwFg89GVKJ2E6QAAAAASUVORK5CYII=" InformativeScreenshot="06ac8bbd12242ae1ec0605898eea5800.jpg" Selector="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" Title="2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses" Url="https://www.2basetechnologies.com/" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>

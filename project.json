@@ -2,7 +2,7 @@
   "name": "2Base Website",
   "projectId": "f7b70fb7-cc97-4bab-a0d2-0abccc995607",
   "description": "",
-  "main": "2BaseFull.xaml",
+  "main": "2Base - New Workflow - Testing.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.GSuite.Activities": "[2.7.11-preview]",
@@ -16,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.6.0",
-  "projectVersion": "1.0.4",
+  "projectVersion": "1.0.13",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -47,25 +47,46 @@
     },
     "fileInfoCollection": [],
     "modernBehavior": false,
-    "saveToCloud": false
+    "saveToCloud": false,
+    "cloudProjectUrl": "https://cloud.uipath.com/ncxofnn/studio_/designer/84fd5dde-2268-4b87-8c94-2d0f7ceb8821"
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Contact Us.xaml",
-      "uniqueId": "0537234c-24c0-4115-be90-2dcb3c07d33e",
+      "filePath": "2Base - New Workflow - Testing.xaml",
+      "uniqueId": "664dd5b0-8a88-4af0-9e8b-e21efbae389b",
       "input": [],
       "output": []
     },
     {
-      "filePath": "2BaseFull.xaml",
-      "uniqueId": "e1849883-ab1c-4c7c-87b5-50a21e9940ee",
+      "filePath": "Workflows - Testing\\2BaseFull - Copy - No SS.xaml",
+      "uniqueId": "2b63eede-75c4-4759-be02-1d6bd8e14de7",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Workflows - Testing\\2BaseFull - Corrected Workflow - No Screenshot - Testing.xaml",
+      "uniqueId": "8cf298bd-52a3-4616-b5af-0d2282aaf422",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Workflows - Testing\\2BaseFull.xaml",
+      "uniqueId": "d54b6122-9860-4e19-8820-04f91361e1a9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Workflows - Testing\\Contact Us.xaml",
+      "uniqueId": "b04edafb-a140-4918-95f4-96cc2939fd6e",
       "input": [],
       "output": []
     }
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {},
+  "publishData": {
+    "iconUrl": ".package/2base-technologies-logo1413796200.png"
+  },
   "targetFramework": "Windows"
 }
