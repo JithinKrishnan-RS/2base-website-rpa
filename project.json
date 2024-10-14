@@ -6,6 +6,7 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.GSuite.Activities": "[2.7.11-preview]",
+    "UiPath.IntegrationService.Activities": "[1.8.0]",
     "UiPath.Mail.Activities": "[1.23.11]",
     "UiPath.MicrosoftOffice365.Activities": "[2.6.25]",
     "UiPath.System.Activities": "[24.11.0-preview]",
@@ -59,26 +60,26 @@
       "output": []
     },
     {
-      "filePath": "Workflows - Testing\\2BaseFull - Copy - No SS.xaml",
-      "uniqueId": "2b63eede-75c4-4759-be02-1d6bd8e14de7",
+      "filePath": "Workflows - Old\\2BaseFull - Copy - No SS.xaml",
+      "uniqueId": "ce4e44cb-8fae-4a1b-9b6d-0f39eb9e89ee",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Workflows - Testing\\2BaseFull - Corrected Workflow - No Screenshot - Testing.xaml",
-      "uniqueId": "8cf298bd-52a3-4616-b5af-0d2282aaf422",
+      "filePath": "Workflows - Old\\2BaseFull - Corrected Workflow - No Screenshot - Testing.xaml",
+      "uniqueId": "99a8b114-fb8c-49fb-80ec-cc7c728b1300",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Workflows - Testing\\2BaseFull.xaml",
-      "uniqueId": "d54b6122-9860-4e19-8820-04f91361e1a9",
+      "filePath": "Workflows - Old\\2BaseFull.xaml",
+      "uniqueId": "1d648752-9ff9-4b90-ac38-fc3b322cd0d2",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Workflows - Testing\\Contact Us.xaml",
-      "uniqueId": "b04edafb-a140-4918-95f4-96cc2939fd6e",
+      "filePath": "Workflows - Old\\Contact Us.xaml",
+      "uniqueId": "67703392-5a38-45f9-82b6-780ce77886c0",
       "input": [],
       "output": []
     }
