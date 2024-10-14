@@ -110,9 +110,9 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_2Base___New_Workflow___Testing" sap:VirtualizedContainerService.HintSize="1018.4000000000001,12409.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_2Base___New_Workflow___Testing" sap:VirtualizedContainerService.HintSize="1018.4000000000001,2476" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="currentDateTimeNow" />
+      <Variable x:TypeArguments="x:String" Name="currentDateTime" />
       <Variable x:TypeArguments="x:String" Name="letstalkpage_flag" />
       <Variable x:TypeArguments="x:String" Name="error_pagename" />
       <Variable x:TypeArguments="x:String" Name="homepage_flag" />
@@ -123,7 +123,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - Get Current Date and Time" sap:VirtualizedContainerService.HintSize="636.8,56.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence - Get Current Date and Time" sap:VirtualizedContainerService.HintSize="483.2,56.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -132,15 +132,15 @@
       </sap:WorkflowViewStateService.ViewState>
       <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[currentDateTimeNow]</OutArgument>
+          <OutArgument x:TypeArguments="x:String">[currentDateTime]</OutArgument>
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("dd-MM-yyyy - hh:mm:ss")]</InArgument>
         </Assign.Value>
       </Assign>
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Execution Date &amp; Time: &quot;+currentDateTimeNow]" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Execution Date &amp; Time: &quot;+currentDateTime]" />
     </Sequence>
-    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="636.8,56.8" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome">
+    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="483.2,56.8" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -148,7 +148,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:KillProcess>
-    <Sequence DisplayName="Sequence - Form Checks" sap:VirtualizedContainerService.HintSize="636.8,11687.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Sequence - Form Checks" sap:VirtualizedContainerService.HintSize="483.2,620.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="error_page" />
       </Sequence.Variables>
@@ -158,20 +158,20 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Sequence - Home Page" sap:VirtualizedContainerService.HintSize="603.2,3745.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence DisplayName="Sequence - Home Page" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 2Base Technologies | Leading Digital Solutions Company Empowering Global Busines" sap:VirtualizedContainerService.HintSize="569.6,3653.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: 2Base Technologies | Leading Digital Solutions Company Empowering Global Busines" sap:VirtualizedContainerService.HintSize="636.8,3815.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,3413.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,3575.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="validationExistsHome" />
                   <Variable x:TypeArguments="x:String" Name="errorMessageHome" />
@@ -182,11 +182,22 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="Testing" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="4382033a-7762-49ca-9dff-e6b43892de61" CvElementArea="1048, 422, 595, 54" CvType="InputBox" DesignTimeRectangle="1055, 423, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required' placeholder='Full Name *' aaname='' /&gt;" Guid="e0a771c0-18c1-443c-8cd3-6126452a636f" InformativeScreenshot="f74e2c4aeba21ce78e4f06f1c01e0012.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                </uix:NTypeInto>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="500.8,412" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,301.6" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="Testing" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="4382033a-7762-49ca-9dff-e6b43892de61" CvElementArea="1048, 422, 595, 54" CvType="InputBox" DesignTimeRectangle="1055, 423, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required' placeholder='Full Name *' aaname='' /&gt;" Guid="e0a771c0-18c1-443c-8cd3-6126452a636f" InformativeScreenshot="f74e2c4aeba21ce78e4f06f1c01e0012.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
                 <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="jithinkrishnan.rs@2basetechnologies.com" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="b3b48555-2256-44ba-bffe-34e0adc2ec33" CvElementArea="1048, 512, 594, 53" CvType="InputBox" DesignTimeRectangle="1055, 513, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email' placeholder='Email Address *' aaname='' /&gt;" Guid="e9bfee83-57f7-4a8c-b538-b16e90096b0d" InformativeScreenshot="42b631976114d108a58be1e25ae6394a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -202,7 +213,7 @@
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="a8491259-d096-4dad-b07c-bbd7778bf21f" CvElementArea="1051, 734, 589, 49" CvTextArea="1056, 700, 196, 22" CvTextArgument="Project Description *" CvType="InputBox" DesignTimeRectangle="1055, 693, 584, 89" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required' placeholder='Project Description *' aaname='' /&gt;" Guid="87cd9fdf-0fe1-42de-bcae-d2967a311bdf" InformativeScreenshot="394d2b234f532f8cd0685ce5a4230149.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_8" />
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Request Proposal'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/" CVScreenId="8b436c0e-8413-4499-9db0-2fc11d5742dd" CvElementArea="1049, 774, 594, 92" CvTextArea="1245, 807, 201, 26" CvTextArgument="Request Proposal" CvType="Button" DesignTimeRectangle="1055, 779, 584, 84" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='wpcf7-form-control wpcf7-submit has-spinner req-proposal-btn btn-hover' aaname='Request Proposal' check:text='Request Proposal' /&gt;" Guid="ea2d2bdf-93c3-47b3-95e3-b7d1377a8f60" InformativeScreenshot="c18ea2fa4ec5e575a4b814cf3b817907.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -324,21 +335,21 @@
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </Sequence>
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="603.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="---Home Page Ends Here---" />
-      <Sequence DisplayName="Sequence - Contact Us" sap:VirtualizedContainerService.HintSize="603.2,3745.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="---Home Page Ends Here---" />
+      <Sequence DisplayName="Sequence - Contact Us" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_50">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Contact Us | 2Base Technologies" sap:VirtualizedContainerService.HintSize="568,3653.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Contact Us | 2Base Technologies" sap:VirtualizedContainerService.HintSize="568,3815.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,3413.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,3575.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="validationExistsContact" />
                   <Variable x:TypeArguments="x:String" Name="errorMessageContact" />
@@ -349,11 +360,22 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="Testing" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/contact-us/" CVScreenId="ffa385b2-482a-456d-90e5-ab60554eea61" CvTextArea="1111, 440, 110, 18" CvTextArgument="Full Name *" CvType="Text" DesignTimeRectangle="1110, 431, 629, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required' placeholder='Full Name *' aaname='' /&gt;" Guid="c50a8ee4-a95b-4d34-9074-dc4e50ce2fcf" InformativeScreenshot="29859314cd0593e867e135bd3bfc4a99.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Us | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                </uix:NTypeInto>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="500.8,412" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,301.6" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="Testing" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/contact-us/" CVScreenId="ffa385b2-482a-456d-90e5-ab60554eea61" CvTextArea="1111, 440, 110, 18" CvTextArgument="Full Name *" CvType="Text" DesignTimeRectangle="1110, 431, 629, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required' placeholder='Full Name *' aaname='' /&gt;" Guid="c50a8ee4-a95b-4d34-9074-dc4e50ce2fcf" InformativeScreenshot="29859314cd0593e867e135bd3bfc4a99.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Us | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
                 <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="jithinkrishnan.rs@2basetechnologies.com" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/contact-us/" CVScreenId="ad165cde-2587-4b10-9964-d1cfb1a2d189" CvTextArea="1111, 530, 151, 18" CvTextArgument="Email Address *" CvType="Text" DesignTimeRectangle="1110, 521, 629, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email' placeholder='Email Address *' aaname='' /&gt;" Guid="215445b5-6c49-4b5a-998f-07f7a448f369" InformativeScreenshot="4e3c8206e1d29685df46d5d33919452d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Us | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -369,7 +391,7 @@
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/contact-us/" CVScreenId="4dd5454c-348c-4e85-83ae-c538ae30ae64" CvTextArea="1110, 707, 198, 22" CvTextArgument="Project Description *" CvType="Text" DesignTimeRectangle="1110, 701, 629, 89" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required' placeholder='Project Description *' aaname='' /&gt;" Guid="938dbe81-4150-4e3d-91a6-9485b1751ca6" InformativeScreenshot="555dfb1b984f1b4c6a37cf77aa7e89e3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Us | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_11" />
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Request Proposal'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/contact-us/" CVScreenId="aedb244f-69c5-4386-bf43-746728adbe50" CvElementArea="1105, 782, 636, 91" CvTextArea="1322, 816, 202, 26" CvTextArgument="Request Proposal" CvType="Button" DesignTimeRectangle="1110, 787, 629, 84" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='wpcf7-form-control wpcf7-submit has-spinner req-proposal-btn btn-hover' aaname='Request Proposal' check:text='Request Proposal' /&gt;" Guid="c4954d02-d6bb-40da-9752-027fb66ded9d" InformativeScreenshot="5c4d215cbf82b91dbaea158019bffd0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Contact Us | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -483,23 +505,29 @@
           <uix:NApplicationCard.TargetApp>
             <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJhSURBVDhPlZNLTxNRFMdngR/BL6BGN0VxgUESE2migYUPEhWNCJpGURdojCa40bDBBWCCOxemJu5cmPhA0YiiISjRIG2hD9ppKZUW2tr3PDrtzN97bqeFhrjwn/ySmXvPOffcc84VqgJAbGNYGU8ZIkM2oW9aoz2yMb2Y6MdkO2OYkWD8S7RHNmTL/TY7P2cYjHrpOrTYGrKfviD14iUUn99ga2TLg5BzA4OibjgbBkqJJLIfP2N1cAhLJ85goakFjl174TncjuzkFNmSTwMFoHvF6aTi71Vo63EeQFuNovBzDvmZ7yjM/kD2wyRCtutw7LAgeLEPuqwwQ1gpgJ1SjD4YQaCrB8pSgAcop9Mop9IoMVQxCEPToIbC8LR1IHCulwWg2sIulHM5MXzjDhw7LVhsPsRTjty9D19HJ7xHjnHcB62IP34CXVEgXrDxw0yJguxalN0tbXDu3sdxWZqxfO0mYqOPEHvIGB1DZOAe8t9moRcKCF66ivz0jOkPWdDW1mX/qfMsg0Y49zRxR0rXUFXeAZKhlWCUdaRfjSPYe4VdL8PXmWSqgUhF8h49zistOVzsziGE+29j5dYAP50I9fVjYX8rYiNjFdeKRF5E+pLm5hHsuQzF44X0ywH/yS74O88icLq7hthtgzTvJPOq7BttZCquRHjlSaVkErokwSgWK6hFal3tWky1Nm4ZJJqBzNv3SL+ZQGZ8AunX79gkTlVbR6obJKJulEt/UogODcPdaoWr8QDrfTsS9me8uKZN3ShvDkJR+WMiY8XjQ+7rNNTgcjX1rY+pKnPhP5+zIPwFg89GVKJ2E6QAAAAASUVORK5CYII=" InformativeScreenshot="c673808c20d4be4f2c74f2111479fbc3.jpg" Selector="&lt;html app='chrome.exe' title='Contact Us | 2Base Technologies' /&gt;" Title="2Base Technologies | Leading Digital Solutions Company Empowering Global Businesses" Url="https://www.2basetechnologies.com/contact-us/" />
           </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </Sequence>
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="603.2,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="---Contact Us Page Ends Here---" />
-      <Sequence DisplayName="Sequence - Let's Talk" sap:VirtualizedContainerService.HintSize="603.2,3745.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="---Contact Us Page Ends Here---" />
+      <Sequence DisplayName="Sequence - Let's Talk" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_51">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Contact Us | 2Base Technologies" sap:VirtualizedContainerService.HintSize="568,3653.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Contact Us | 2Base Technologies" sap:VirtualizedContainerService.HintSize="568,3815.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,3413.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,3575.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="validationExistsLetsTalk" />
                   <Variable x:TypeArguments="x:String" Name="errorMessageLetsTalk" />
@@ -511,11 +539,22 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="Testing" Version="V4">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/lets-talk/" CVScreenId="37feffd3-ff26-4b00-883a-e0c141eb29b9" CvElementArea="1047, 470, 595, 56" CvType="InputBox" DesignTimeRectangle="1055, 474, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required' placeholder='Full Name *' aaname='' /&gt;" Guid="3f60bbf2-b3cc-4cd5-bbe8-075b3fb66967" InformativeScreenshot="a5ad9c90a1e48068b32dba993943dc82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lets Talk | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                  </uix:NTypeInto.Target>
-                </uix:NTypeInto>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="500.8,412" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,301.6" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="Testing" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/lets-talk/" CVScreenId="37feffd3-ff26-4b00-883a-e0c141eb29b9" CvElementArea="1047, 470, 595, 56" CvType="InputBox" DesignTimeRectangle="1055, 474, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required' placeholder='Full Name *' aaname='' /&gt;" Guid="3f60bbf2-b3cc-4cd5-bbe8-075b3fb66967" InformativeScreenshot="a5ad9c90a1e48068b32dba993943dc82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lets Talk | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
                 <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="500.8,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Text="jithinkrishnan.rs@2basetechnologies.com" Version="V4">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/lets-talk/" CVScreenId="919d4326-499d-4ed3-9bec-5f3457c6dabf" CvElementArea="1048, 597, 596, 54" CvType="InputBox" DesignTimeRectangle="1055, 599, 584, 52" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email' placeholder='Email Address *' aaname='' /&gt;" Guid="c344701e-2063-40e5-b19b-0b20da49b88e" InformativeScreenshot="73a52d2dd1fea74331e2b399c28ea0a0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lets Talk | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -531,7 +570,7 @@
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/lets-talk/" DesignTimeRectangle="1055, 565, 584, 89" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required' placeholder='Share a few details about what you’re looking for (ie. re-platforming, website redesign, software development, product strategy, etc...) *' aaname='' /&gt;" Guid="0714f8a0-55ff-48ff-bcdc-30ba4448880d" InformativeScreenshot="c2453aa98bd4509efaa71df3adb49515.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lets Talk | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
                 </uix:NTypeInto>
-                <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="500.8,122.4" sap2010:WorkflowViewState.IdRef="Delay_13" />
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Request Proposal'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bb86fd2a-8f46-4fc6-958a-2559ac9d9d44" Version="V4">
                   <uix:NClick.Target>
                     <uix:TargetAnchorable BrowserURL="https://www.2basetechnologies.com/lets-talk/" CVScreenId="f70be7f5-8b2c-4ea6-8a95-dc5702a15276" CvElementArea="1049, 830, 593, 92" CvTextArea="1245, 865, 202, 26" CvTextArgument="Request Proposal" CvType="Button" DesignTimeRectangle="1055, 835, 584, 84" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='wpcf7-form-control wpcf7-submit has-spinner req-proposal-btn' aaname='Request Proposal' check:text='Request Proposal' /&gt;" Guid="e2708d83-fc47-4bff-ada7-7275e1f4ddab" InformativeScreenshot="9fd85fdd5a7f218b910a23e1f1808900.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Lets Talk | 2Base Technologies' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -647,16 +686,16 @@
           </uix:NApplicationCard.TargetApp>
         </uix:NApplicationCard>
       </Sequence>
-      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="603.2,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="---Let's Talk Page Ends Here---" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="---Let's Talk Page Ends Here---" />
     </Sequence>
-    <Sequence DisplayName="Sequence - Send Email" sap:VirtualizedContainerService.HintSize="636.8,585.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+    <Sequence DisplayName="Sequence - Send Email" sap:VirtualizedContainerService.HintSize="483.2,1718.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut DisplayName="Comment Out - Only For Debugging" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut DisplayName="Comment Out - Only For Debugging" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_43">
             <sap:WorkflowViewStateService.ViewState>
@@ -675,7 +714,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:CommentOut>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, pass, pass" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_5">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, pass, pass" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -683,7 +722,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,907.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,807.2" sap2010:WorkflowViewState.IdRef="Sequence_27">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Image" Name="screenshotImg" />
               <Variable x:TypeArguments="x:String" Name="variable1" />
@@ -695,7 +734,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="Pass" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello,&#xA;&#xA;This is an automated message to inform you that&lt;/SPAN&gt;&lt;SPAN&gt; all&lt;/SPAN&gt;&lt;SPAN&gt; the contact forms on the 2Base Website has been successfully submitted &amp;amp; verified.&#xA;&#xA;Thank you for your attention.&#xA;&#xA;Best regards,&#xA;RPA Bot&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_12" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Success: Contact Form Submissions Successful on 2Base Website - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,511.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_12" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="[&quot;Success: Contact Form Submissions Successful on 2Base Website - &quot;+ currentDateTime]" TextBody="Hello,&#xD;&#xA;&#xD;&#xA;This is an automated message to inform you that all the contact forms on the 2Base Website has been successfully submitted and verified.&#xD;&#xA;&#xD;&#xA;Thank you for your attention.&#xD;&#xA;&#xD;&#xA;Best regards,&#xD;&#xA;RPA Bot" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="0" />
               </umam:SendMailConnections.AttachmentList>
@@ -709,10 +748,17 @@
                 </usau:BackupSlot>
               </umam:SendMailConnections.AttachmentsBackup>
               <umam:SendMailConnections.InputTypeBackup>
-                <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="HTML">
+                <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="TEXT">
                   <usau:BackupSlot.BackupValues>
                     <scg:List x:TypeArguments="x:Object" x:Key="HTML" Capacity="1">
-                      <InArgument x:TypeArguments="x:String" />
+                      <InArgument x:TypeArguments="x:String" xml:space="preserve">[string.Format("&lt;P&gt;&lt;SPAN&gt;Hello,
+
+This is an automated message to inform you that&lt;/SPAN&gt;&lt;SPAN&gt; all&lt;/SPAN&gt;&lt;SPAN&gt; the contact forms on the 2Base Website has been successfully submitted &lt;/SPAN&gt;&lt;SPAN&gt;and&lt;/SPAN&gt;&lt;SPAN&gt; verified.
+
+Thank you for your attention.
+
+Best regards,
+RPA Bot&lt;/SPAN&gt;&lt;/P&gt;")]</InArgument>
                     </scg:List>
                     <scg:List x:TypeArguments="x:Object" x:Key="TEXT" Capacity="1">
                       <x:Null />
@@ -746,7 +792,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, pass, fail" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_6">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, pass, fail" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_6">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -762,7 +808,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_25" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_26" Text="Error Page: Let's Talk" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_5" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Let's Talk Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_5" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Let's Talk Page - &quot;+ currentDateTime]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\lets_talk.jpg")]</InArgument>
@@ -813,7 +859,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, fail, pass" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_7">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, fail, pass" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -829,7 +875,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_27" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_28" Text="Error Page: Contact Us" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_6" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_6" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us Page - &quot;+ currentDateTime]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\contact_us.jpg")]</InArgument>
@@ -880,7 +926,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, fail, fail" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_8">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, fail, fail" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_8">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -896,7 +942,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_29" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_30" Text="Error Page: Contact Us, Let's Talk" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_7" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_7" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us, Let's Talk Pages - &quot;+ currentDateTime]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\contact_us.jpg")]</InArgument>
@@ -948,7 +994,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - fail, pass, pass" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_9">
+      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - fail, pass, pass" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_9">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -964,7 +1010,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_31" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_32" Text="Error Page: Home Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_8" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_8" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page - &quot;+ currentDateTime]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>
@@ -1015,7 +1061,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - fail, pass, fail" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_10">
+      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - fail, pass, fail" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_10">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1031,7 +1077,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_33" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_34" Text="Error Page: Home Page, Let's Talk Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_9" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_9" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Let's Talk Pages - &quot;+ currentDateTime]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>
@@ -1083,7 +1129,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - fail, fail, pass" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_11">
+      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - fail, fail, pass" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_11">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1099,7 +1145,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_35" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_36" Text="Error Page: Home Page, Contact Us Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_10" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_10" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Pages - &quot;+ currentDateTime]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>
@@ -1151,15 +1197,15 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - fail, fail, fail" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_12">
+      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - fail, fail, fail" sap:VirtualizedContainerService.HintSize="449.6,1180.8" sap2010:WorkflowViewState.IdRef="If_12">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1029.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,929.6" sap2010:WorkflowViewState.IdRef="Sequence_41">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1167,7 +1213,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_37" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_38" Text="Error Page: Home Page, Contact Us Page, Let's Talk Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt; Hello,&#xA;&#xA;This is an automated message to inform you that the contact form on the Home, Contact Us and Let&amp;#39;s Talk Pages of 2Base Website has encountered an error. Please find the attached screenshot.&#xA;&#xA;Thank you for your attention.&#xA;&#xA;Best regards,&#xA;RPA Bot&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_11" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Page, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,511.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_11" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Page, Let's Talk Pages - &quot;+ currentDateTime]" TextBody="Hello,&#xA;&#xA;This is an automated message to inform you that the contact form on the Home, Contact Us and Let's Talk Pages of 2Base Website has encountered an error. Please find the attached screenshot.&#xA;&#xA;Thank you for your attention.&#xA;&#xA;Best regards,&#xA;RPA Bot" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>
@@ -1185,7 +1231,7 @@
                 </usau:BackupSlot>
               </umam:SendMailConnections.AttachmentsBackup>
               <umam:SendMailConnections.InputTypeBackup>
-                <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="HTML">
+                <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="TEXT">
                   <usau:BackupSlot.BackupValues>
                     <scg:List x:TypeArguments="x:Object" x:Key="HTML" Capacity="1">
                       <InArgument x:TypeArguments="x:String" />
