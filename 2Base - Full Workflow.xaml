@@ -110,7 +110,7 @@
       <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_2Base___New_Workflow___Testing" sap:VirtualizedContainerService.HintSize="1023.2,12677.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_2Base___New_Workflow___Testing" sap:VirtualizedContainerService.HintSize="1018.4000000000001,12409.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="currentDateTimeNow" />
       <Variable x:TypeArguments="x:String" Name="letstalkpage_flag" />
@@ -123,7 +123,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequence - Get Current Date and Time" sap:VirtualizedContainerService.HintSize="636.8,100.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence - Get Current Date and Time" sap:VirtualizedContainerService.HintSize="636.8,56.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -140,7 +140,7 @@
       </Assign>
       <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Execution Date &amp; Time: &quot;+currentDateTimeNow]" />
     </Sequence>
-    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="636.8,84.8" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome">
+    <ui:KillProcess AppliesTo="{x:Null}" Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="636.8,56.8" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="chrome">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -649,14 +649,14 @@
       </Sequence>
       <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="603.2,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_13" Text="---Let's Talk Page Ends Here---" />
     </Sequence>
-    <Sequence DisplayName="Sequence - Send Email" sap:VirtualizedContainerService.HintSize="636.8,781.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+    <Sequence DisplayName="Sequence - Send Email" sap:VirtualizedContainerService.HintSize="636.8,585.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut DisplayName="Comment Out - Only For Debugging" sap:VirtualizedContainerService.HintSize="416,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut DisplayName="Comment Out - Only For Debugging" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,173.6" sap2010:WorkflowViewState.IdRef="Sequence_43">
             <sap:WorkflowViewStateService.ViewState>
@@ -675,7 +675,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:CommentOut>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, pass, pass" sap:VirtualizedContainerService.HintSize="416,84.8" sap2010:WorkflowViewState.IdRef="If_5">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, pass, pass" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -694,7 +694,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="Pass" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello,&#xA;&#xA;This is an automated message to inform you that&lt;/SPAN&gt;&lt;SPAN&gt; all&lt;/SPAN&gt;&lt;SPAN&gt; the contact forms on the 2Base Website has been successfully submitted &amp;amp; verified.&#xA;&#xA;Thank you for your attention.&#xA;&#xA;Best regards,&#xA;RPA Bot&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_12" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Success: Contact Form Submissions Successful on 2Base Website - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello,&#xA;&#xA;This is an automated message to inform you that&lt;/SPAN&gt;&lt;SPAN&gt; all&lt;/SPAN&gt;&lt;SPAN&gt; the contact forms on the 2Base Website has been successfully submitted &amp;amp; verified.&#xA;&#xA;Thank you for your attention.&#xA;&#xA;Best regards,&#xA;RPA Bot&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_12" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Success: Contact Form Submissions Successful on 2Base Website - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="0" />
               </umam:SendMailConnections.AttachmentList>
@@ -745,7 +745,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, pass, fail" sap:VirtualizedContainerService.HintSize="416,84.8" sap2010:WorkflowViewState.IdRef="If_6">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, pass, fail" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_6">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -761,7 +761,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_25" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_26" Text="Error Page: Let's Talk" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_5" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Let's Talk Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_5" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Let's Talk Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\lets_talk.jpg")]</InArgument>
@@ -812,7 +812,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, fail, pass" sap:VirtualizedContainerService.HintSize="416,84.8" sap2010:WorkflowViewState.IdRef="If_7">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - pass, fail, pass" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -828,7 +828,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_27" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_28" Text="Error Page: Contact Us" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_6" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_6" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\contact_us.jpg")]</InArgument>
@@ -879,7 +879,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, fail, fail" sap:VirtualizedContainerService.HintSize="416,84.8" sap2010:WorkflowViewState.IdRef="If_8">
+      <If Condition="[homepage_flag = &quot;pass&quot; And contactpage_flag = &quot;fail&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - pass, fail, fail" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_8">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -895,7 +895,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_29" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_30" Text="Error Page: Contact Us, Let's Talk" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_7" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_7" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Contact Us, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\contact_us.jpg")]</InArgument>
@@ -947,7 +947,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - fail, pass, pass" sap:VirtualizedContainerService.HintSize="416,84.8" sap2010:WorkflowViewState.IdRef="If_9">
+      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;pass&quot;]" DisplayName="If - fail, pass, pass" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_9">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -963,7 +963,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_31" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_32" Text="Error Page: Home Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_8" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_8" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>
@@ -1014,7 +1014,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - fail, pass, fail" sap:VirtualizedContainerService.HintSize="416,84.8" sap2010:WorkflowViewState.IdRef="If_10">
+      <If Condition="[homepage_flag = &quot;fail&quot; And contactpage_flag = &quot;pass&quot; And letstalkpage_flag = &quot;fail&quot;]" DisplayName="If - fail, pass, fail" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="If_10">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1030,7 +1030,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_33" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_34" Text="Error Page: Home Page, Let's Talk Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_9" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_9" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>
@@ -1098,7 +1098,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_35" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_36" Text="Error Page: Home Page, Contact Us Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_10" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_10" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>
@@ -1166,7 +1166,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_37" Text="Fail" />
             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_38" Text="Error Page: Home Page, Contact Us Page, Let's Talk Page" />
-            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt; Hello,&#xA;&#xA;This is an automated message to inform you that the contact form on the Home, Contact Us and Let&amp;#39;s Talk Pages of 2Base Website has encountered an error. Please find the attached screenshot.&#xA;&#xA;Thank you for your attention.&#xA;&#xA;Best regards,&#xA;RPA Bot&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_11" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Page, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;jithinkrishnan.rs@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt; Hello,&#xA;&#xA;This is an automated message to inform you that the contact form on the Home, Contact Us and Let&amp;#39;s Talk Pages of 2Base Website has encountered an error. Please find the attached screenshot.&#xA;&#xA;Thank you for your attention.&#xA;&#xA;Best regards,&#xA;RPA Bot&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="b43da560-0e67-4b4a-a9b3-eaaf85742fc0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="382.4,611.2" sap2010:WorkflowViewState.IdRef="SendMailConnections_11" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Action Required: Contact Form Submission Failure on 2Base Website, Home Page, Contact Us Page, Let's Talk Pages - &quot;+ currentDateTimeNow]" To="[New String(){&quot;sales@2basetechnologies.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:SendMailConnections.AttachmentList>
                 <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                   <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Jithin Krishnan R S\\OneDrive\\Documents\\OpenRPA Screenshot\\home_page.jpg")]</InArgument>

@@ -2,7 +2,7 @@
   "name": "2Base Website",
   "projectId": "f7b70fb7-cc97-4bab-a0d2-0abccc995607",
   "description": "",
-  "main": "2Base - New Workflow - Testing.xaml",
+  "main": "2Base - Full Workflow.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.GSuite.Activities": "[2.7.11-preview]",
@@ -80,6 +80,12 @@
     {
       "filePath": "Workflows - Old\\Contact Us.xaml",
       "uniqueId": "67703392-5a38-45f9-82b6-780ce77886c0",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "2Base - Full Workflow.xaml",
+      "uniqueId": "a43eb270-25d1-406a-b833-45461f273e39",
       "input": [],
       "output": []
     }
