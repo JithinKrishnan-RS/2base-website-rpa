@@ -54,12 +54,6 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "2Base - New Workflow - Testing.xaml",
-      "uniqueId": "664dd5b0-8a88-4af0-9e8b-e21efbae389b",
-      "input": [],
-      "output": []
-    },
-    {
       "filePath": "Workflows - Old\\2BaseFull - Copy - No SS.xaml",
       "uniqueId": "ce4e44cb-8fae-4a1b-9b6d-0f39eb9e89ee",
       "input": [],
